@@ -190,7 +190,10 @@ if __name__ == '__main__':
 #    f.open(QIODevice.ReadOnly)
 #    model = TreeModel(f.readAll())
 #    f.close()
-    f = ['こんにちは','OK','2017/04/01']     # TreeItem 1単位?
+    f = [] #['こんにちは','OK','2017/04/01']     # TreeItem 1単位?
+    f.append('こんにちわ')
+    f.append('OK')
+    f.append('2017/05/08')
 
     model = TreeModel(f)
 
