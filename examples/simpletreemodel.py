@@ -222,6 +222,8 @@ if __name__ == '__main__':
     Qcategory.setText(1, 'T')
     Q2 = QTreeWidgetItem(Qcategory)
     Q2.setText(0, 'Y')
+    Q2.setText(1, '2015/05/02')
+
     view.addTopLevelItem(Qcategory)
     rb = QRadioButton()
     view.setItemWidget(Qcategory, 2, rb)
