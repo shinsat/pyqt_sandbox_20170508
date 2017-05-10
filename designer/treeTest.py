@@ -1,5 +1,6 @@
 from PyQt5.QtWidgets import *
 from PyQt5.uic import *
+from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 import sys
 
@@ -23,16 +24,17 @@ if __name__ == "__main__":
 #        label = QLabel('タイトル')
 #        label.setWordWrap(True)
 #        item_displayed.setText(0, 'ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ')
-        item_displayed.setText(0, 'タイトル')
+        item_displayed.setText(0, 'タイトルaaaaaaaaaaaaaaaaaaaaaaa')
         item_displayed.setForeground(0, QBrush(QColor('red')))
         item_displayed.setForeground(1, QBrush(QColor('blue')))
+      #  item_displayed.setTextAlignment(1, Qt.AlignHCenter)
 
         ui.addTopLevelItem(item_displayed)
 #        ui.setItemWidget(item_displayed, 0, label)
         item_displayed.setText(1, '1111 - 東芝\n1234 - 日立')
         ui.addTopLevelItem(item_displayed)
 
-        ui.resizeColumnToContents(1)
+        ui.resizeColumnToContents(0)
 
 
         sub = QTreeWidgetItem(item_displayed)
