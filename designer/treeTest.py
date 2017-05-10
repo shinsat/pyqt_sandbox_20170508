@@ -27,12 +27,13 @@ if __name__ == "__main__":
         item_displayed.setText(0, 'タイトルaaaaaaaaaaaaaaaaaaaaaaa')
         item_displayed.setForeground(0, QBrush(QColor('red')))
         item_displayed.setForeground(1, QBrush(QColor('blue')))
-      #  item_displayed.setTextAlignment(1, Qt.AlignHCenter)
+        item_displayed.setTextAlignment(1, Qt.AlignBottom)
+     #   item_displayed.setTextAlignment(0, Qt.AlignTop)
 
         ui.addTopLevelItem(item_displayed)
 #        ui.setItemWidget(item_displayed, 0, label)
-        item_displayed.setText(1, '1111 - 東芝\n1234 - 日立')
-        ui.addTopLevelItem(item_displayed)
+#        item_displayed.setText(1, '1111 - 東芝\n1234 - 日立')
+#        ui.addTopLevelItem(item_displayed)
 
         ui.resizeColumnToContents(0)
 
@@ -41,8 +42,12 @@ if __name__ == "__main__":
 #        sub.setText(0, 'ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ')
         label = QLabel('ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ')
         label.setWordWrap(True)
+        label.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         ui.addTopLevelItem(sub)
         ui.setItemWidget(sub, 0, label)
+        sub.setText(1, '1111 - 東芝\n1234 - 日立')
+        ui.addTopLevelItem(sub)
+        sub.setTextAlignment(1, Qt.AlignTop)
 
     ui.show()
 
