@@ -1,5 +1,6 @@
 # http://hiro-itasuto7.hatenadiary.jp/entry/2011/03/23/184607
 # http://www.yoheim.net/blog.php?q=20160610
+
 DATA = {'ID1':'10', 'ID2':'20', 'ID3':['30','100','200']}
 
 class mine:
